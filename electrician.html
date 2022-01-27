@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ServiceFinder / Contact</title>
+        <title>Electrician - Online Service Finder</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -25,10 +25,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-        <!-- Firebase libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     </head>
 
     <body>
@@ -41,7 +37,7 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>ServiceFinder</h1>
-                                    
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
                         </div>
@@ -95,100 +91,92 @@
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Home</a>
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="feedback.html" class="nav-item nav-link">Feedbacks</a>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <a href="team.html" class="nav-item nav-link">Feedbacks</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
+                            
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
+
+
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/c3.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight"> </p>
+                            <h1 class="animated fadeInLeft">Electricians</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Page Header End -->
+            <!-- Carousel End -->
 
-            
 
-            <!-- Contact Start -->
-            <div class="contact">
+
+             <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                    <div id="contact_alert"></div>
-                    <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, Mumbai, India</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2>Email</h2>
-                                        <p>info@example.com</p>
-                                    </div>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/d6.png" alt="Image">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">  
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>Electrician In Pune</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Is there a non functional electrical socket in thee house? Need additional electrical wires laid down? Fan, Led bulb not working? Acefix is a Pune based Electrical repair and maintenance service provider known for quality, professional and superior work. Our expert Electricians are well trained at all kinds of electrical repair, maintenance and installation work whether it is at your home, office, residential society or a commercial establishment.
+                                </p>
+                                <p>
+                                   We are happy to help you design special packages and deals for bulk work requirement for societies and commercial establishments. Avail Electrician services in Pune within 90 minutes along with a 30-day post-service warranty assuring you peace of mind. Acefix is the one stop that provides solution for all your electrical work requirements. Call AceFix, choose a visit slot according to your convenience and leave the rest to us.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Contact End -->
+            <!-- About End -->    
+
+              <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>Domestic And Resedential Electrical services</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Are you looking for an Electrician to help you with all your domestic and commercial electrical work? Look no further than All Access Electrical. We service all Surfers Paradise & Broadbeach.<br>When you need electrical contractors, call us today for all your solutions to your electrical needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button start  -->
+            <div class="containerbtn" >
+                <a href="./customerinfo.html">
+                    <button  class="findbtn findbtn1" type="submit">Find service provider</button>
+                </a>
+            </div>
+            <!-- Button end  -->
 
 
             <!-- Footer Start -->
@@ -251,7 +239,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        <script src="firebase/firebase.js"></script>
-        <script src="js/contact.js"></script>
     </body>
 </html>

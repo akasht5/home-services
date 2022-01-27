@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ServiceFinder / Contact</title>
+        <title>Painting - Online Service Finder</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -25,10 +25,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-        <!-- Firebase libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     </head>
 
     <body>
@@ -41,7 +37,7 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>ServiceFinder</h1>
-                                    
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
                         </div>
@@ -95,101 +91,96 @@
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Home</a>
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="feedback.html" class="nav-item nav-link">Feedbacks</a>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <a href="team.html" class="nav-item nav-link">Feedbacks</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
+                            
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
             
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
+
+            <!-- Team Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/c1.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight"> </p>
+                            <h1 class="animated fadeInLeft">Painting </h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Page Header End -->
-
+            <!-- Carousel End -->
             
 
-            <!-- Contact Start -->
-            <div class="contact">
+
+
+             <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                    <div id="contact_alert"></div>
-                    <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, Mumbai, India</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2>Email</h2>
-                                        <p>info@example.com</p>
-                                    </div>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/d4.png" alt="Image">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">  
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>Painting Contractor In Pune</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    UrbanClap Painting is one roof for interior solution for Painting works, Our services are professonal is to make sure that your experience with us is a pleasurable one. we are engaged in offering a wide range of services such as Interior Painting, Exterior Painting, Decorative Painting, Texture Painting services. For Apartment, Flat, Residential, Villas, Bungalows, Houses, Office, Commercial, Industries, Factory.
+                                </p>
+                                <p>
+                                   Special Effect Paints for Children's Room, Cartoons, Disney, Galaxy, Wall Fashion, Decorative paint, Art painting, Canvas painting and Interior Royal Play with Exterior Textures Paints.Services offered by us are known for reliablity and for timely exucution. We have trained Painter who have strong expertise and customers focus enabling them to execute their task as per the Client requirements. Being a quality centric company, we make sure that the quality of our Interior Painting and Exterior Painting.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Contact End -->
+            <!-- About End -->    
 
+
+             <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>High Quality Residential & Commercial Painting</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                   Your house looks good when the interior and finishing are perfect. The contribution of painting in a home is vital. It is correct that professional house painters can add life to a structure. Acefix is also working as leading painting contractors in Pune, and it has been in the industry for more than a decade. We are glad that our expert painters understand complete details about the painting. 
+                                </p>
+                                <p>
+                                  Apart from experience, we understand how to execute the painting work excellently. We have local painting contractors with deep knowledge to ensure the house's interior and exterior look unique and magnificent. The finishing of the house will be on the top if you hire us. Undoubtedly we are ahead of many house painting companies in delivering qualitative and customized painting services in Pune.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Button start  -->
+            <div class="containerbtn" >
+                <a href="./customerinfo.html">
+                    <button  class="findbtn findbtn1" type="submit">Find service provider</button>
+                </a>
+            </div>
+            <!-- Button end  -->
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -251,7 +242,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        <script src="firebase/firebase.js"></script>
-        <script src="js/contact.js"></script>
     </body>
 </html>

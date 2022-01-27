@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ServiceFinder / Contact</title>
+        <title>ServiceFinder / Submit your feedback</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -41,7 +41,6 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>ServiceFinder</h1>
-                                    
                                 </a>
                             </div>
                         </div>
@@ -102,7 +101,7 @@
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
                                 <a href="feedback.html" class="nav-item nav-link">Feedbacks</a>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
                         </div>
                     </nav>
@@ -110,87 +109,63 @@
             </div>
             <!-- Nav Bar End -->
             
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Header End -->
-
-            
-
-            <!-- Contact Start -->
-            <div class="contact">
-                <div class="container">
-                    <div id="contact_alert"></div>
-                    <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, Mumbai, India</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2>Email</h2>
-                                        <p>info@example.com</p>
+            <div class="container-fluid customer-info">
+                    <div id="feedback_alert"></div>
+                    <form id="feedback_form">
+                        <h3 class="text-center mb-3 mt-4">Give us your feedback</h3>
+                        <div class="row">
+                            <div class="col-lg-6 mx-auto">
+                                <div class="card mt-2 mx-auto bg-light">
+                                    <div class="card-body bg-light">
+                                        <div class="row">
+                                                <div class="col-lg-12 mx-auto">
+                                                    <div>
+                                                        <div class="form-group"> <label for="c_fullname">Full Name *</label> <input id="c_fullname" type="text" name="fullname" class="form-control" placeholder="Enter your fullname" required="required"> </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group"> <label for="c_email">Email *</label> <input id="c_email" type="email" name="email" class="form-control" placeholder="Enter your email" required="required"> </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group">
+                                                            <label for="rate">What do you rate our services ?</label>
+                                                            <div>
+                                                                <input type="radio" name="rating" id="very-bad" value="very-bad" />
+                                                                <span>Very Bad</span>
+                                                            </div>
+                                                            <div>
+                                                                <input type="radio" name="rating" id="bad" value="bad" />
+                                                                <span>Bad</span>
+                                                            </div>
+                                                            <div>
+                                                                <input type="radio" name="rating" id="somewhat-good" value="somewhat-good" />
+                                                                <span>Somewhat Good</span>
+                                                            </div>
+                                                            <div>
+                                                                <input type="radio" name="rating" id="good" value="good" />
+                                                                <span>Good</span>
+                                                            </div>
+                                                            <div>
+                                                                <input type="radio" name="rating" id="very-good" value="very-good" />
+                                                                <span>Very Good</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group"> 
+                                                            <label for="c_feedback">Feedback *</label> 
+                                                            <textarea id="c_feedback" class="form-control" placeholder="Enter your feedback" required="required"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary btn-block mt-4 mb-2">Submit feedback</button>
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">  
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </form>
             </div>
-            <!-- Contact End -->
-
-
+            
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
@@ -248,10 +223,9 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>
-
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+
         <script src="firebase/firebase.js"></script>
-        <script src="js/contact.js"></script>
+        <script src="js/feedback.js"></script>
     </body>
 </html>

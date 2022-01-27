@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ServiceFinder / Contact</title>
+        <title>Interior - Online Service Finder</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -25,10 +25,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-        <!-- Firebase libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     </head>
 
     <body>
@@ -41,7 +37,7 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>ServiceFinder</h1>
-                                    
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
                         </div>
@@ -95,100 +91,98 @@
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Home</a>
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="feedback.html" class="nav-item nav-link">Feedbacks</a>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <a href="team.html" class="nav-item nav-link">Feedbacks</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
+                            
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
+
+             <!-- Carousel Start -->
+             <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/c4.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight"> </p>
+                            <h1 class="animated fadeInLeft">Interior Design</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Page Header End -->
+            <!-- Carousel End -->
 
-            
 
-            <!-- Contact Start -->
-            <div class="contact">
+
+             <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                    <div id="contact_alert"></div>
-                    <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, Mumbai, India</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2>Email</h2>
-                                        <p>info@example.com</p>
-                                    </div>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/service-3.jpg" alt="Image">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">  
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>Interior Design Contractor In Pune</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    one-stop-shop for all your interior needs. With the breadth of experience, satisfied clients, exceptional service, we are the experts of all types of interior works. Enside comprises the cream of the crop designers, innovators, and masterminds. With years of proficiency in hand, you look at designs that draw customers, influence decision-makers, and display a comprehensively pleasing experience. Our vision is to make eye-appealing interior and environment-friendly designs, all the while making people’s lives simpler and better.
+                                </p>
+                                <p>
+                                   We combine technical competences and creativity to produce proposals for homes. The emphasis is on enhancing the standards of functionality, efficiency, comfort, and top-notch appearance. Our services provide you the scope…<br>
+                                   When it comes to designing spaces for businesses, we are recognized for our numerous commercial designs. We bring the ideal design to stand out for your business value, increase functionality, and lift up your style for financial gain…
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Contact End -->
+            <!-- About End -->    
+
+              <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2>Domestic And Resedential Interior services</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                   Commercial interior design must balance aesthetics, functionality and future-proofing, and our experts lead the way in creating inspiring workspaces that fit your brief. The most important part of a commercial interior design project is for us to understand what your employees need from their working environment. To do this, we start by taking a detailed brief from your business, involving initial meetings with stakeholders, and begin a thorough workplace analysis. Each project is different, which is why we work collaboratively with you to achieve the design and style that fulfils your requirements.
+                                </p>   
+
+                                <p>
+                                    The results of the appraisal will help to inform our initial 2D floor plan – also called a general arrangement plan – which will then enable us to agree on the layout and operational functionality of the space, optimising the office space design.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <!-- About End --> 
+
+            <!-- Button start  -->
+            <div class="containerbtn">
+                <a href="./customerinfo.html">
+                    <button  class="findbtn findbtn1" type="submit">Find service provider</button>
+                </a>
+            </div>
+            <!-- Button end  -->
 
 
             <!-- Footer Start -->
@@ -251,7 +245,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        <script src="firebase/firebase.js"></script>
-        <script src="js/contact.js"></script>
     </body>
 </html>

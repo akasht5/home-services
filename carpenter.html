@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ServiceFinder / Contact</title>
+        <title>Carpenter - Online Service Finder</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -25,10 +25,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-        <!-- Firebase libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     </head>
 
     <body>
@@ -41,7 +37,6 @@
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>ServiceFinder</h1>
-                                    
                                 </a>
                             </div>
                         </div>
@@ -95,100 +90,74 @@
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Home</a>
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
                                 <a href="feedback.html" class="nav-item nav-link">Feedbacks</a>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
+
+
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/c5.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight"> </p>
+                            <h1 class="animated fadeInLeft">Carpeting</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Page Header End -->
+            <!-- Carousel End -->
 
-            
 
-            <!-- Contact Start -->
-            <div class="contact">
+
+             <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                    <div id="contact_alert"></div>
-                    <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, Mumbai, India</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2>Email</h2>
-                                        <p>info@example.com</p>
-                                    </div>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/d3.png" alt="Image">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">  
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                              <!--   <p>Welcome to Builderz</p> -->
+                                <h2>Carpenting Contractor In Pune</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                   Carpenter Services in Pune, Best Carpenter in Pune, Carpentry Repair Services in Pune, Carpentry Maintenance Service in Pune. If you really think searching for a carpenter near me is a tough task, then there is great news for you. Starting from wooden furniture to a variety of woodwork a carpenter or handyman can be easily hired from trusted service providers like us. Moreover, we ensure that trained, experienced as well as rightly skilled professionals are there to help you in executing your woodwork designs without fail. Our carpenters are actually available throughout Pune and can visit your home anytime according to your preference to turn your designs into elegant and effective pieces of furniture.
+                                </p>
+                                <p>
+                                   Our establishment provides high-quality carpentry services for a wide range of applications at home or in the office. Our extensive suite of carpentry services is actually geared towards providing our customers with a solution that really fits into their budget as well as schedule, and goes beyond their expectations to fully satisfy them. If you need to get something installed or fixed by a professional carpenter, then we are there to help you.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
+            </div><br><br>
+            <!-- About End -->  
+
+            <!-- Button start  -->
+            <div class="containerbtn">
+                <a href="./customerinfo.html">
+                    <button  class="findbtn findbtn1" type="submit">Find service provider</button>
+                </a>
             </div>
-            <!-- Contact End -->
+            <!-- Button end  -->
 
 
             <!-- Footer Start -->
@@ -251,7 +220,5 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        <script src="firebase/firebase.js"></script>
-        <script src="js/contact.js"></script>
     </body>
 </html>
